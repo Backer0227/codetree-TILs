@@ -15,6 +15,7 @@ public class Main {
         else
         {
             System.out.print(a/b + ".");
+            i--;
         }
         while(i <= 18)
         {
