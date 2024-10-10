@@ -10,18 +10,22 @@ public class Main {
         for(int i=1;i<=n;i++)
         {
             String a = String.valueOf(i);
-            int b;
+            int count=0;
             for(int j=0; j<a.length();j++)
             {
                 if(i%3 == 0|| a.charAt(j) == '3'|| a.charAt(j) == '6'|| a.charAt(j) == '9')
                 {
                     System.out.print(0+" ");
-                    break;
+                    if(j == 0 || j == 1)
+                    {
+                        break;
+                    }
                 }
-                else
+                count++;
+                if(count == a.length())
                 {
-                    System.out.print(i+" ");
-                    break;
+                	System.out.print(i+" ");
+                	break;
                 }
             }
             
