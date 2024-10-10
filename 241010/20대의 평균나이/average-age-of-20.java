@@ -8,7 +8,7 @@ public class Main {
         while(true)
         {
             int a = sc.nextInt();
-            if (a > 0 && a < 30)
+            if (a > 19 && a < 30)
             {
                 sum += a;
                 count ++;
