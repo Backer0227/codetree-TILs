@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int max1=-2,max2=-1;
+        int max1=-2147483648,max2=-1;
         for(int i=0;i<n;i++)
         {
             int a = sc.nextInt();
