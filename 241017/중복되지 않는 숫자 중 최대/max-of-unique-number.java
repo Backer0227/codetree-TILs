@@ -14,29 +14,17 @@ public class Main {
             int A = sc.nextInt();
             arr[A]++;
         }
-        for(int i=1;i<n;i++)
+        boolean notele = false;
+        int idx = -1;
+        for(int i = 1;i<n;i++)
         {
-            if(arr[i]<min && arr[i] != 0)
+            if(arr[i]==1)
             {
-                min = arr[i];
-            }
-        }
-        boolean Ok = true;
-        int idx=-1;
-        for(int i=1;i<n;i++)
-        {
-            if(arr[i] == min)
-            {
+                notele = true;
                 idx = i;
-                count++;
-                if(count >= 2)
-                {
-                    Ok = false;
-                    break;
-                }
             }
         }
-        if(Ok)
+        if(notele)
         {
             System.out.print(idx);
         }
