@@ -6,16 +6,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int[][] arr = new int[4][4];
-        int a = 1;
         for(int i=0;i<4;i++)
         {
             for(int j=0;j<4;j++)
             {
-                arr[i][j] = a++;
-            }
-            if(i==0)
-            {
-                a+=2;
+                arr[i][j] = sc.nextInt();
             }
         }
 
