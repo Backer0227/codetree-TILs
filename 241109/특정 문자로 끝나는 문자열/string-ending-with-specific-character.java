@@ -13,16 +13,18 @@ public class Main {
         }
         char A = sc.next().charAt(0);
 
+        boolean pass = false;
         for(int i=0;i<10;i++)
         {
             if(arr[i].charAt(arr[i].length()-1) == A)
             {
+                pass = true;
                 System.out.println(arr[i]);
             }
-            if(i == 9)
-            {
-                System.out.print("None");
-            }
+        }
+        if(!pass)
+        {
+            System.out.print("None");
         }
     }
 }
