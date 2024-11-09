@@ -19,6 +19,10 @@ public class Main {
             {
                 System.out.println(arr[i]);
             }
+            if(i == 9)
+            {
+                System.out.print("None");
+            }
         }
     }
 }
