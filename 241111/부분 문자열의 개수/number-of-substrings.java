@@ -12,7 +12,7 @@ public class Main {
         while((index = A.indexOf(B,index)) != -1)
         {
             count++;
-            index+= B.length();
+            index+= 1;
         }
         System.out.print(count);
     }
