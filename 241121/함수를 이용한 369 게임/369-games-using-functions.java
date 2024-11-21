@@ -7,8 +7,8 @@ public class Main {
         int[] arr = new int[nString.length()];
         for(int i=0;i<nString.length();i++)
         {
-            arr[i] = nString.charAt(i);
-            if(arr[i]%3 == 0 || n%3 == 0)
+            arr[i] = nString.charAt(i)-'0';
+            if((arr[i]%3 == 0 && arr[i] != 0) || n%3 == 0 )
             {
                 return true;
             }
