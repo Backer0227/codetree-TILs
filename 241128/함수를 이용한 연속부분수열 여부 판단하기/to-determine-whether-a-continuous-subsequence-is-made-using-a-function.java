@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static boolean AB(int[] A, int[] B)
     {
-        for(int i=0;i<A.length;i++)
+        for(int i=0;i<A.length-B.length;i++)
         {
             int count = 0;
             int inum = i;
