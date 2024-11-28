@@ -7,7 +7,7 @@ public class Main {
     }
     public static int minus(int a, int c)
     {
-        return Math.abs(a-c);
+        return a-c;
     }
     public static int divide(int a, int c)
     {
