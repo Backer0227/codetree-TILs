@@ -3,8 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static boolean AB(int[] A, int[] B)
     {
-        for(int i=0;i<A.length-B.length;i++)
+        for(int i=0;i<A.length;i++)
         {
+            if(i == A.length - B.length && A.length != B.length)
+            {
+                return false;
+            }
             int count = 0;
             int inum = i;
             for(int j=0;j<B.length;j++)
@@ -23,6 +27,10 @@ public class Main {
                     }
                     continue;
                 }
+            }
+            if(A.length == B.length)
+            {
+                return false;
             }
         }
         return false;
