@@ -6,6 +6,10 @@ public class Main {
         int[] is31 = new int[]{1,3,5,7,8,10,12};
         int[] is30 = new int[]{4,6,9,11};
         
+        if(M > 12 || D > 31)
+        {
+            return false;
+        }
         for(int i=0;i<is31.length;i++)
         {
             if(M == is31[i])
