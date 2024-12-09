@@ -1,22 +1,20 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void func1(int n,int a)
+    public static void func1(int n)
     {
         if (n==0)
         {
-            System.out.print("\n");
             return;
         }
 
-        System.out.print(a-n+1+" ");
-        func1(n-1,a);
+        func1(n-1);
+        System.out.print(n+" ");
     }
     public static void func2(int n)
     {
         if(n==0)
         {
-            System.out.print("\n");
             return;
         }
 
@@ -29,7 +27,8 @@ public class Main {
 
         int N = sc.nextInt();
 
-        func1(N,N);
+        func1(N);
+        System.out.print("\n");
         func2(N);
     }
 }
