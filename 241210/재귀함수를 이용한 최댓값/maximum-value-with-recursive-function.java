@@ -8,13 +8,14 @@ public class Main {
             return arr[0];
         }
 
-        if (arr[n] > recursion(arr,n-1))
+        int min = recursion(arr,n-1);
+        if(arr[n] > min)
         {
             return arr[n];
         }
         else
         {
-            return recursion(arr,n-1);
+            return min;
         }
     }
     public static void main(String[] args) {
