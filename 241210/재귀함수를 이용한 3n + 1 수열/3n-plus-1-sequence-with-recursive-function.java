@@ -5,7 +5,7 @@ public class Main {
     {
         if(n == 1)
         {
-            return 1;
+            return count;
         }
         
         if(n % 2 == 0)
