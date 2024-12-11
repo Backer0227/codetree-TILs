@@ -1,6 +1,24 @@
 import java.util.Scanner;
 
 public class Main {
+    public static int min(int a, int b)
+    {
+        if(a<b)
+        {   
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+        int r = a%b;
+        if(r == 0)
+        {
+            return b;
+        }
+        else
+        {
+            return min(a,r);
+        }
+    }
     public static int recursion(int[] arr, int n)
     {
         if(n == 0)
@@ -14,7 +32,8 @@ public class Main {
         }
         else
         {
-            return A*arr[n];
+            int minA = min(A,arr[n]);
+            return (A*arr[n])/minA;
         }
 
     }
