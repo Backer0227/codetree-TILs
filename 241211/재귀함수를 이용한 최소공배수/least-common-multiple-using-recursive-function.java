@@ -3,21 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static int min(int a, int b)
     {
-        if(a<b)
-        {   
-            int temp = a;
-            a = b;
-            b = temp;
-        }
-        int r = a%b;
-        if(r == 0)
+        if(b == 0)
         {
-            return b;
+            return a;
         }
-        else
-        {
-            return min(a,r);
-        }
+        
+        return min(b,a%b);
     }
     public static int recursion(int[] arr, int n)
     {
@@ -26,16 +17,8 @@ public class Main {
             return arr[0];
         }
         int A = recursion(arr,n-1);
-        if(A%arr[n] == 0)
-        {
-            return A;
-        }
-        else
-        {
-            int minA = min(A,arr[n]);
-            return (A*arr[n])/minA;
-        }
-
+        int minA = min(A,arr[n]);
+        return (A*arr[n])/minA;
     }
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
